@@ -1,1 +1,5 @@
-<h1 class = "text-center">Your mood for today's weather is {{ mood }}.</h>
+<h1 class = "text-center">Your mood for today's {{ data.[0].weather }} in {{ data.[0].location }} weather is {{ data.[0].mood }}.</h>
+
+<div class = "container">
+    <a href="/" class="btn btn-primary text-center">Go Back</a>
+</div>
