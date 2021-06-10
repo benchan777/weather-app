@@ -51,6 +51,12 @@ app.post('/', (req, res) => {
                     .then( (data) => {
                         res.render('result', { data })
                     })
+                    .catch( (err) => {
+                        console.log(err)
+                    })
+                })
+                .catch( (err) => {
+                    console.log(err)
                 })
             })
             .catch( (err) => {
@@ -65,7 +71,16 @@ app.post('/', (req, res) => {
                 .then( (data) => {
                     res.render('mood', { data })
                 })
+                .catch( (err) => {
+                    console.log(err)
+                })
             })
+            .catch( (err) => {
+                console.log(err)
+            })
+        })
+        .catch( (err) => {
+            console.log(err)
         })
     }
 })
