@@ -4,7 +4,7 @@
   "description": "weather app using openweather api",
   "main": "index.js",
   "scripts": {
-    "start": "workspace/app.js",
+    "start": "app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
